@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Filter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center; /* Center the content horizontally */
+      align-items: center;     /* Center the content vertically */
+      height: 100vh; /* Full viewport height */
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center; /* Center the text inside the container */
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .filter-section {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .filter-section label {
+      font-size: 16px;
+      margin-right: 10px;
+      color: #555;
+    }
+
+    .filter-section input[type="range"] {
+      margin: 0 10px;
+      width: 200px;
+    }
+
+    .filter-section span {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center; /* Center the products inside the container */
+    }
+
+    .product {
+      width: calc(33.33% - 20px); /* Three items per row */
+      max-width: 300px;
+      padding: 10px;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .product h2 {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .product p {
+      font-size: 14px;
+      color: #007bff;
+      font-weight: bold;
+    }
+    img{
+        height: 150px;
+        width: 150px;
+    }
+    /* Adjust for smaller screens */
+    @media (max-width: 768px) {
+      .product {
+        width: calc(50% - 20px); /* Two items per row on smaller screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .product {
+        width: 100%; /* One item per row on very small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 style="margin-top: 300px;">Product List</h1>
+
+    <!-- Filter Section -->
+    <div class="filter-section">
+      <label for="priceRange">Filter by Max Price:</label>
+      <input type="range" id="priceRange" min="0" max="100" value="100" oninput="updatePriceRange()">
+      <span id="rangeLabel">$100</span>
+    </div>
+
+    <!-- Product List -->
+    <div class="product-list" id="productList">
+      <div class="product" data-price="20">
+        <img src="./images/orage-juice-kariz-400x400.jpg" alt="">
+        <h2>Product 1</h2>
+        <p>$20</p>
+      </div>
+      <div class="product" data-price="50">
+        <img src="./images/2nd.jpeg" alt="">
+        <h2>Product 2</h2>
+        <p>$50</p>
+      </div>
+      <div class="product" data-price="80">
+        <img src="./images/AlphonsoMango200ml01.webp" alt="">
+        <h2>Product 3</h2>
+        <p>$80</p>
+      </div>
+      <div class="product" data-price="30">
+        <img src="./images/images (1).jpeg" alt="">
+        <h2>Product 4</h2>
+        <p>$30</p>
+      </div>
+      <div class="product" data-price="90">
+        <img src="./images/images.jpeg" alt="">
+        <h2>Product 5</h2>
+        <p>$90</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Function to update the range label and filter products based on the selected price
+    function updatePriceRange() {
+      const rangeValue = document.getElementById("priceRange").value;
+      document.getElementById("rangeLabel").textContent = `$${rangeValue}`;
+      
+      // Call the function to filter products by the selected price
+      filterProductsByPrice(rangeValue);
+    }
+
+    // Function to filter products based on the max price
+    function filterProductsByPrice(maxPrice) {
+      const products = document.querySelectorAll(".product");
+
+      products.forEach(product => {
+        const price = parseInt(product.getAttribute("data-price"), 10);
+        
+        // Show product if its price is less than or equal to the max range value
+        if (price <= maxPrice) {
+          product.style.display = "block";
+        } else {
+          product.style.display = "none";
+        }
+      });
+    }
+
+    // Initialize filter on page load
+    window.onload = () => {
+      updatePriceRange(); // Apply the filter on page load
+    };
+  </script>
+</body>
+</html>

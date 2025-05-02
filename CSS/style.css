@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.main-header{
+    background-color: #ffffff;
+    color: rgb(25, 24, 22);
+    
+    padding-left: 50px;
+    margin-top: 20px;
+    margin-left: 0px;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-left:; */
+    padding-right: 200px;
+    margin-top: 10px;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+  
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.nav-links1{
+    padding-left: 50px;
+   list-style: none;
+   display: flex;
+   gap: 40px;
+   padding-right: 500px;
+}
+.nav-links2{
+    text-align: center;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+ }
+ #img1{
+    padding-bottom: 10px;
+ }
+
+ .l4:hover{
+    color: rgb(45, 230, 45);
+ }
+ .l4.active{
+    color: rgb(45, 230, 45);
+ }
+ .btn-cont{
+    background-color: rgb(4, 217, 224);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+ }
+ .btn-cont:hover{
+    color: #333;
+    background-color: rgb(127, 181, 183);
+ }
+ .organic-products-hero1{
+    background-color: #dcdcdc22;
+    padding-top: 120px;
+    padding-left: 180px;
+    display: flex;
+    line-height: 1.5;
+    gap: 100px;
+ }
+ .flex1{
+    flex:1; 
+}
+.join{
+    line-height: 1.3;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+.hero-p{
+    line-break: inherit;
+    line-height: 1.5;
+}
+.Shop-nav{
+    color: #ffffff;
+    background-color: rgb(107, 154, 35);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.Shop-nav:hover{
+    background-color: rgb(132, 201, 28);
+    color: black;
+}
+.certificate-flex{
+    background-color: rgb(49, 48, 48);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    padding-left: 240px;
+}
+.box-flex
+{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+.product-flex{
+    text-align: center;
+    display: flex;
+    gap: 30px;
+    padding-left: 170px;
+}
+.box2{
+    font-size: 25px;
+}
+.p-product{
+    color: #b7a9a9; 
+}
+.best-products{
+    line-height:2.9;
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: 100px;
+    text-align: center;
+}
+.box2:hover{
+    box-shadow: 0px 7px 7px rgba(0, 0,0, 0.1); 
+}
+.img22{
+    margin-top: 100px;
+    text-align: center;
+    align-items: center;
+}
+ .fress-items-flex{
+    margin-top: 0px;
+    text-align: center; 
+    display: flex;
+    gap: 15px;
+    padding-left:100px;
+    padding-right: 100px;
+    background-color: #dcdcdc22;
+    
+}  
+.box3{
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    border-radius: 10px;
+    line-height: 1.9;
+} 
+.btn-shop1{
+    margin-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(107, 154, 35);
+    margin-right: 200px;
+    border-radius: 5px;
+}
+.box3-img{
+
+    padding-left: 100px;
+}
+.btn-shop1:hover{
+    color: #333;
+    background-color: rgb(123, 179, 40);
+}
+.box3-h3{
+    font-size: 29px;
+}
+.box3-p{
+    font-size: 20px;
+}
+.first-purchase{
+    display: flex;
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 250px;
+}
+.first-purchase-h1{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.first-purchase-nav{
+   
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(107, 154, 35);
+    margin-left: 500px;
+    border-radius: 5px;
+}
+.first-purchase-nav:hover{
+    background-color: rgb(132, 201, 28);
+    color: black;
+}
+.first-purchase-nav1{
+    margin-top: 100px;
+    background-color: rgb(107, 154, 35);
+    border-radius: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    margin-left: 00px;
+    
+}
+.first-purchase-nav1:hover{
+    background-color: rgb(132, 201, 28);
+    color: black;
+}
+.box4{
+    background-color: rgb(255, 255, 255);
+    color: white;
+    font-weight: bold;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    border-radius: 10px;
+    line-height: 1.9;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/images/limon-dulce.jpg');
+}
+.brands{
+    background-color: #dcdcdc22;
+    padding-left: 80px;
+    display: flex;
+    gap: 80px;
+    padding-bottom: 40px;
+}
+.footer-flex{
+    background-color: black;
+    /* padding-top: 70px;
+    padding-left: 60px; */
+    display: flex;
+    gap: 0px;
+    line-break:auto;
+    line-height: 1.5;
+}
+.box5{
+    margin: 10px;
+    padding: 100px;
+    /* background-color: #f3f3f3; */
+    color: #ffffff;
+    padding: 90px;
+}
+.box5-h{
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.box5-p{
+    
+    margin-top: 50px;
+    max-lines: 10;
+    font-size: 20px;
+    padding-bottom:0px ;
+}
+.ww{
+    padding-left: 600px;
+    background-color: black;
+    color: #ffffff;
+    display: flex;
+    gap: 50px;
+    padding-bottom: 20px;
+}
